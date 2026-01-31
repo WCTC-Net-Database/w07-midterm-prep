@@ -30,7 +30,7 @@ Week 4: IFileHandler              Week 7: IContext
 ├── ReadAll()                     ├── Players (List)
 ├── WriteAll()                    ├── Monsters (List)
 ├── FindByName()         →        ├── Items (List)
-├── FindByClass()                 ├── Read()
+├── FindByProfession()            ├── Read()
 └── AppendCharacter()             ├── Write(entity)
                                   └── SaveChanges()
 ```
