@@ -21,6 +21,27 @@ The midterm will assess your understanding of:
 | SOLID principles | Weeks 3-6 |
 | Inheritance | Weeks 5-6 |
 
+### The IContext Pattern (Key Concept!)
+
+Remember `IFileHandler` from Week 4? This template introduces `IContext` - the next evolution:
+
+```
+Week 4: IFileHandler              Week 7: IContext
+├── ReadAll()                     ├── Players (List)
+├── WriteAll()                    ├── Monsters (List)
+├── FindByName()         →        ├── Items (List)
+├── FindByClass()                 ├── Read()
+└── AppendCharacter()             ├── Write(entity)
+                                  └── SaveChanges()
+```
+
+**Why the change?**
+- `IFileHandler` works with one entity type (Characters)
+- `IContext` works with multiple entity types (Players, Monsters, Items)
+- `SaveChanges()` mimics how databases work - you make changes in memory, then save them all at once
+
+**Coming in Week 9:** `IContext` becomes `DbContext` with real database support!
+
 ---
 
 ## What's in This Template
